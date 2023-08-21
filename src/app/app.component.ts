@@ -13,4 +13,6 @@ export class AppComponent {
   price = 20;
 
   sellingPrice = 18.99;
+
+  attributevalue = 'movies-value'
 }
