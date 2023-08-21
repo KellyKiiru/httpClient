@@ -2,8 +2,6 @@
 
 <p>Todays date is {{today | date:'dd/mm/yy'}}</p>
 
-<img alt="" [src]="imgUrl" width="imgWidth">
+<button (click)="setTimeToNow()" >Set time to now</button>
 
-<p [style.background-color]="bgColor">
-Class and style binding test
-</p>
+<p>Time now : {{timeNow }}</p>
