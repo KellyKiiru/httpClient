@@ -14,6 +14,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { NotAuthorizedComponent } from './components/not-authorized/not-authorized.component';
 import { SearchComponent } from './components/search/search.component';
 import { ProfitPipe } from './pipes/profit.pipe';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +32,8 @@ import { ProfitPipe } from './pipes/profit.pipe';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

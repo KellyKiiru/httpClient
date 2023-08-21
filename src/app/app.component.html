@@ -1,8 +1,3 @@
-<h1>{{title | uppercase}}</h1>
+<input type="text" [(ngModel)]="fullName">
 
-<p>Todays date is {{today | date:'dd/mm/yy'}}</p>
-
-<input #color placeholder="Type color">
-<button (click)="setTextColor(color.value)" >Set time to now</button>
-
-<p [style.color]="pColor">color is : {{color.value }}</p>
+<p>{{fullName}}</p>
