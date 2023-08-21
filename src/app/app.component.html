@@ -2,6 +2,7 @@
 
 <p>Todays date is {{today | date:'dd/mm/yy'}}</p>
 
-<button (click)="setTimeToNow()" >Set time to now</button>
+<input #color placeholder="Type color">
+<button (click)="setTextColor(color.value)" >Set time to now</button>
 
-<p>Time now : {{timeNow }}</p>
+<p [style.color]="pColor">color is : {{color.value }}</p>

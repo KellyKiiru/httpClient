@@ -9,10 +9,11 @@ export class AppComponent {
   title = 'movies-app';
   today = new Date()  
 
-  timeNow = new Date()
+  pColor = '';
   
-  setTimeToNow(){
-    this.timeNow = new Date()
+  setTextColor(color:string){
+    console.log(color);
+    this.pColor = color;
   }
 
 }
