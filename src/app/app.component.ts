@@ -16,5 +16,5 @@ export class AppComponent {
 
   attributevalue = 'movies-value'
 
-  multipleStyles = 'background-color: blue; color: white;'
+  bgColor = 'purple'
 }
