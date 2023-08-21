@@ -15,4 +15,6 @@ export class AppComponent {
   sellingPrice = 18.99;
 
   attributevalue = 'movies-value'
+
+  multipleClasses = 'sample-bgcolor sample-color'
 }

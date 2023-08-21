@@ -4,12 +4,6 @@
 
 <img alt="" [src]="imgUrl" width="imgWidth">
 
-<!-- <p>Price: {{price | currency}} </p> -->
-
-<span>
-  Selling Price: {{sellingPrice}}, Profit: {{sellingPrice | profit}}
-</span>
-
-<hr>
-<button type="button" [attr.aria-label]="attributevalue">Sample button
-</button>
+<p [class]="multipleClasses">
+Class and style binding test
+</p>
