@@ -13,7 +13,7 @@ import { ModalComponent } from './components/modal/modal.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { NotAuthorizedComponent } from './components/not-authorized/not-authorized.component';
 import { SearchComponent } from './components/search/search.component';
-
+import { ProfitPipe } from './pipes/profit.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +26,8 @@ import { SearchComponent } from './components/search/search.component';
     ModalComponent,
     NavbarComponent,
     NotAuthorizedComponent,
-    SearchComponent
+    SearchComponent,
+    ProfitPipe
   ],
   imports: [
     BrowserModule,
