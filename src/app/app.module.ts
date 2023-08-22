@@ -15,6 +15,7 @@ import { NotAuthorizedComponent } from './components/not-authorized/not-authoriz
 import { SearchComponent } from './components/search/search.component';
 import { ProfitPipe } from './pipes/profit.pipe';
 import { FormsModule } from '@angular/forms';
+import { ActorsComponent } from './components/actors/actors.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +29,8 @@ import { FormsModule } from '@angular/forms';
     NavbarComponent,
     NotAuthorizedComponent,
     SearchComponent,
-    ProfitPipe
+    ProfitPipe,
+    ActorsComponent
   ],
   imports: [
     BrowserModule,
