@@ -8,7 +8,9 @@ import { Component } from '@angular/core';
 export class HomeComponent {
 
   // use "ctor" to quickly create a constructor
-  isVisible = false;
+ 
+  integerValue =10;
+
   constructor() {
     
   }
