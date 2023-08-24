@@ -14,43 +14,18 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
+      <tr *ngFor="let search of searchResults">
         <th scope="row">1</th>
         <td>
-            <img src="../../../assets/images/pexels-saad-alawi-14831456.jpg" width="100" alt="" srcset="">
+            <img [src]="search.imageUrl" width="100" alt="" srcset="">
         </td>
-        <td>Movie 1 Title</td>
-        <td>This is a short description</td>
+        <td>{{search.title}}</td>
+        <td>{{search.description}}</td>
         <td>
             <a href="" class="btn btn-warning"  data-bs-toggle="modal" data-bs-target="#exampleModal"> <i class="bi bi-film">Trailer</i> </a> 
-            <a href="" class="btn btn-primary" routerLink="/details"> <i class="bi bi-eye">Details</i> </a> 
+            <a href="" class="btn btn-primary" [routerLink]="search.detailsLink"> <i class="bi bi-eye">{{search.details}}</i>Details </a> 
         </td>
-      </tr>
-      <tr>
-        <th scope="row">1</th>
-        <td>
-            <img src="../../../assets/images/pexels-saad-alawi-14831456.jpg" width="100" alt="" srcset="">
-        </td>
-        <td>Movie 2 Title</td>
-        <td>This is a short description</td>
-        <td>
-            <a href="" class="btn btn-warning"  data-bs-toggle="modal" data-bs-target="#exampleModal"> <i class="bi bi-film">Trailer</i> </a> 
-            <a href="" class="btn btn-primary" routerLink="/details"> <i class="bi bi-eye">Details</i> </a> 
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">1</th>
-        <td>
-            <img src="../../../assets/images/pexels-saad-alawi-14831456.jpg" width="100" alt="" srcset="">
-        </td>
-        <td>Movie 3 Title</td>
-        <td>This is a short description</td>
-        <td>
-            <a href="" class="btn btn-warning"  data-bs-toggle="modal" data-bs-target="#exampleModal"> <i class="bi bi-film">Trailer</i> </a> 
-            <a href="" class="btn btn-primary" routerLink="/details"> <i class="bi bi-eye">Details</i> </a> 
-        </td>
-      </tr>
-      
+      </tr>      
     </tbody>
 </table>
 
