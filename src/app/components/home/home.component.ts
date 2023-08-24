@@ -9,7 +9,7 @@ export class HomeComponent {
 
   // use "ctor" to quickly create a constructor
  
-  integerValue =10;
+  isActive = true;
 
   constructor() {
     
