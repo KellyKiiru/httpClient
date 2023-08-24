@@ -13,6 +13,31 @@ export class HomeComponent {
     
   }
 
+  topMovies:any[]=[
+    {
+      imageUrl:'../../../assets/images/pexels-saad-alawi-14831456.jpg',
+      title:'The Meg',
+      actors:'Movie 1 Actors',
+      rate:8.4,
+      rank:8,
+    },
+    {
+      imageUrl:'../../../assets/images/pexels-saad-alawi-14831456.jpg',
+      title:'Insidious',
+      actors:'Movie 2 Actors',
+      rate:8.4,
+      rank:6,
+    },
+    {
+      imageUrl:'../../../assets/images/pexels-saad-alawi-14831456.jpg',
+      title:'TMechanical',
+      actors:'Movie 3 Actors',
+      rate:8.4,
+      rank:10,
+    }
+  ]
+
+
   fanFavoriteMovies:any[]=[
     {
       imageUrl:'../../../assets/images/doug-watanabe-p060CZWRGSc-unsplash.jpg',
