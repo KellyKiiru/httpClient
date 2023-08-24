@@ -19,7 +19,7 @@ import { ActorsComponent } from './components/actors/actors.component';
 import { RouterModule } from '@angular/router';
 import { AppRoutesModule } from './modules/app.routes';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { HeaderDirective } from './header.directive';
+import { HeaderDirective } from './directives/header.directive';
 @NgModule({
   declarations: [
     AppComponent,
