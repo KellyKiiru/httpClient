@@ -20,6 +20,7 @@ import { RouterModule } from '@angular/router';
 import { AppRoutesModule } from './modules/app.routes';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HeaderDirective } from './directives/header.directive';
+import { MyIfDirective } from './directives/my-if.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,6 +40,7 @@ import { HeaderDirective } from './directives/header.directive';
     // pipes
     ProfitPipe,
      HeaderDirective,
+     MyIfDirective,
   ],
   imports: [
     BrowserModule,
