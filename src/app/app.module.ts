@@ -19,6 +19,7 @@ import { ActorsComponent } from './components/actors/actors.component';
 import { RouterModule } from '@angular/router';
 import { AppRoutesModule } from './modules/app.routes';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { HeaderDirective } from './header.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,6 +38,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 
     // pipes
     ProfitPipe,
+     HeaderDirective,
   ],
   imports: [
     BrowserModule,
