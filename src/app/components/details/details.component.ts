@@ -11,9 +11,9 @@ import { ActivatedRoute } from '@angular/router';
 export class DetailsComponent implements OnInit{
   movieId = ''
   
-  stars = ['Star 1','Star 2','star 3'];
-  genres = ['Genre 1','Genre 2','Genre 3'];
-  directors = ['Director 1','Director 2','Director 3'];
+  stars = [];
+  genres = [];
+  directors = [];
 
   constructor(private _activatedRoute: ActivatedRoute, private httpClient:HttpClient){
     this._activatedRoute.params.subscribe((p) =>{
@@ -25,6 +25,9 @@ export class DetailsComponent implements OnInit{
   loadMovieSummary(){
     this.httpClient.get('assets/data/movieSummary.json').subscribe((data:any)=>{
       console.log("Summary = ", data);
+      this.stars=data.stars;
+      this.genres=data.genres;
+      this.directors=data.directors;
     })
   }
 
