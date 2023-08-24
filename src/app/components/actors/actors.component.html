@@ -1,45 +1,5 @@
-<figure class="figure">
-    <img src="../../../assets/images/jack-anstey-XVoyX7l9ocY-unsplash.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="..." style="max-width: 120px;">
-    <figcaption class="figure-caption">Actor</figcaption>
-    <figcaption class="figure-caption">Role</figcaption>
-</figure>
-<figure class="figure">
-    <img src="../../../assets/images/jack-anstey-XVoyX7l9ocY-unsplash.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="..." style="max-width: 120px;">
-    <figcaption class="figure-caption">Actor</figcaption>
-    <figcaption class="figure-caption">Role</figcaption>
-</figure>
-<figure class="figure">
-    <img src="../../../assets/images/jack-anstey-XVoyX7l9ocY-unsplash.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="..." style="max-width: 120px;">
-    <figcaption class="figure-caption">Actor</figcaption>
-    <figcaption class="figure-caption">Role</figcaption>
-</figure>
-<figure class="figure">
-    <img src="../../../assets/images/jack-anstey-XVoyX7l9ocY-unsplash.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="..." style="max-width: 120px;">
-    <figcaption class="figure-caption">Actor</figcaption>
-    <figcaption class="figure-caption">Role</figcaption>
-</figure>
-<figure class="figure">
-    <img src="../../../assets/images/jack-anstey-XVoyX7l9ocY-unsplash.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="..." style="max-width: 120px;">
-    <figcaption class="figure-caption">Actor</figcaption>
-    <figcaption class="figure-caption">Role</figcaption>
-</figure>
-<figure class="figure">
-    <img src="../../../assets/images/jack-anstey-XVoyX7l9ocY-unsplash.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="..." style="max-width: 120px;">
-    <figcaption class="figure-caption">Actor</figcaption>
-    <figcaption class="figure-caption">Role</figcaption>
-</figure>
-<figure class="figure">
-    <img src="../../../assets/images/jack-anstey-XVoyX7l9ocY-unsplash.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="..." style="max-width: 120px;">
-    <figcaption class="figure-caption">Actor</figcaption>
-    <figcaption class="figure-caption">Role</figcaption>
-</figure>
-<figure class="figure">
-    <img src="../../../assets/images/jack-anstey-XVoyX7l9ocY-unsplash.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="..." style="max-width: 120px;">
-    <figcaption class="figure-caption">Actor</figcaption>
-    <figcaption class="figure-caption">Role</figcaption>
-</figure>
-<figure class="figure">
-    <img src="../../../assets/images/jack-anstey-XVoyX7l9ocY-unsplash.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="..." style="max-width: 120px;">
-    <figcaption class="figure-caption">Actor</figcaption>
-    <figcaption class="figure-caption">Role</figcaption>
+<figure class="figure" *ngFor="let actor of movieActor">
+    <img src="{{actor.imageUrl}}" class="figure-img img-fluid rounded img-thumbnail" alt="..." style="max-width: 120px;">
+    <figcaption class="figure-caption">Actor: {{actor.name}} </figcaption>
+    <figcaption class="figure-caption">Role: {{actor.role}} </figcaption>
 </figure>
