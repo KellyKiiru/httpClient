@@ -41,51 +41,17 @@
           </div>
     </div>
     <div class="col-md-4">
-        <div routerLink="details" class="card mb-3" style="max-width: 540px;">
+        <div routerLink="details/1" *ngFor="let movie of topMovies" class="card mb-3" style="max-width: 540px;">
             <div class="row g-0">
               <div class="col-md-4">
-                <img  src="../../../assets/images/pexels-saad-alawi-14831456.jpg" class="img-fluid rounded-start" alt="...">
+                <img  src="{{movie.imageUrl}}" class="img-fluid rounded-start" alt="...">
               </div>
               <div class="col-md-8">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card </p>
-                  <p class="card-text">
-                    <a href="" class=" btn btn-warning">
-                        <i class="bi bi-film"></i> Trailer
-                    </a>
-                  </p>
-                </div>
-              </div> 
-            </div>
-          </div>
-          <div routerLink="details" class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img  src="../../../assets/images/pexels-saad-alawi-14831456.jpg" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card </p>
-                  <p class="card-text">
-                    <a href="" class=" btn btn-warning">
-                        <i class="bi bi-film"></i> Trailer
-                    </a>
-                  </p>
-                </div>
-              </div> 
-            </div>
-          </div>
-          <div routerLink="details" class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img  src="../../../assets/images/pexels-saad-alawi-14831456.jpg" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card </p>
+                  <h5 class="card-title">{{movie.title}}</h5>
+                  <p class="card-text">{{movie.actors}}</p>
+                  <p class="card-text">{{movie.rate}}</p>
+                  <p class="card-text">{{movie.rank}}</p>
                   <p class="card-text">
                     <a href="" class=" btn btn-warning">
                         <i class="bi bi-film"></i> Trailer
