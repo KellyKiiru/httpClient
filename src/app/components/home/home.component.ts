@@ -7,10 +7,46 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  // use "ctor" to quickly create a constructor
   isVisible = false;
   constructor() {
     
   }
+
+  fanFavoriteMovies:any[]=[
+    {
+      imageUrl:'../../../assets/images/doug-watanabe-p060CZWRGSc-unsplash.jpg',
+      title:'Movie 1 Title',
+      actors: 'Movie Actors',
+      year: '2023',
+      rate: 9.5,
+      trophy:1
+    },
+    {
+      imageUrl:'../../../assets/images/doug-watanabe-p060CZWRGSc-unsplash.jpg',
+      title:'Movie 2 Title',
+      actors: 'Movie Actors',
+      year: '1996',
+      rate: 8.5,
+      trophy:9
+    },
+    {
+      imageUrl:'../../../assets/images/doug-watanabe-p060CZWRGSc-unsplash.jpg',
+      title:'Movie 3 Title',
+      actors: 'Movie Actors',
+      year: '2003',
+      rate: 7.5,
+      trophy:3
+    },
+    {
+      imageUrl:'../../../assets/images/doug-watanabe-p060CZWRGSc-unsplash.jpg',
+      title:'Movie 4 Title',
+      actors: 'Movie Actors',
+      year: '2723',
+      rate: 6.5,
+      trophy:7
+    }
+  ]
 
   // Record is the js equivalent of python dictionaries
   // Which have key:value pairs
