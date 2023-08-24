@@ -23,6 +23,22 @@ export class HomeComponent {
   fanFavoriteMovies:any[]=[
   ]
 
+  getFanFavoriteMovies(){
+    this.httpClient.get<any[]>('assets/data/fanFavoriteMovies.json').subscribe((data:any[])=>{
+      this.fanFavoriteMovies = data;
+    })
+  }
+  
+  getTopMovies(){
+    this.httpClient.get<any[]>('assets/data/topMovies.json').subscribe((data:any[])=>{
+      this.topMovies = data;
+    })
+  }
+
+  ngOnInit():void{
+    this.getFanFavoriteMovies()
+    this.getTopMovies()
+  }
 
 }
 
