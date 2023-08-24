@@ -10,6 +10,10 @@ import { ActivatedRoute } from '@angular/router';
 export class DetailsComponent implements OnInit, OnChanges, AfterContentInit, AfterViewInit{
   movieId = ''
   
+  stars = ['Star 1','Star 2','star 3'];
+  genres = ['Genre 1','Genre 2','Genre 3'];
+  directors = ['Director 1','Director 2','Director 3'];
+
   constructor(private _activatedRoute: ActivatedRoute){
     this._activatedRoute.params.subscribe((p) =>{
       this.movieId = p['id']
