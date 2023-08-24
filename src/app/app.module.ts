@@ -18,6 +18,7 @@ import { FormsModule } from '@angular/forms';
 import { ActorsComponent } from './components/actors/actors.component';
 import { RouterModule } from '@angular/router';
 import { AppRoutesModule } from './modules/app.routes';
+import { NotFoundComponent } from './not-found/not-found.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,8 +32,11 @@ import { AppRoutesModule } from './modules/app.routes';
     NavbarComponent,
     NotAuthorizedComponent,
     SearchComponent,
+    ActorsComponent,
+    NotFoundComponent,
+
+    // pipes
     ProfitPipe,
-    ActorsComponent
   ],
   imports: [
     BrowserModule,
