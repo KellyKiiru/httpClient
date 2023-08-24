@@ -24,15 +24,29 @@ export class HomeComponent {
   ]
 
   getFanFavoriteMovies(){
-    this.httpClient.get<any[]>('assets/data/fanFavoriteMovies.json').subscribe((data:any[])=>{
-      this.fanFavoriteMovies = data;
+    this.httpClient.get<any[]>('assets/data/fanFavoriteMovies.json').subscribe({
+      next:(data:any[])=>{
+        this.fanFavoriteMovies = data;
+    },
+      error:(error)=>{
+        console.log(error)
+      },
+      complete: ()=>{
+        console.log("request Completed successfully")
+      }      
     })
   }
   
   getTopMovies(){
-    this.httpClient.get<any[]>('assets/data/topMovies.json').subscribe((data:any[])=>{
-      this.topMovies = data;
-    })
+    this.httpClient.get<any[]>('assets/data/topMovies.json').subscribe(
+        {
+        next:(data:any[])=>{
+          this.topMovies = data;
+        },
+        error:(error)=>{
+          console.log(error)
+        }
+      })
   }
 
   ngOnInit():void{
