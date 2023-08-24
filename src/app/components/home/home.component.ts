@@ -20,6 +20,6 @@ export class HomeComponent {
       'text-align':this.isCentered? 'center':'',
       'color':this.isSuccess? 'green':'red',
       'font-size':this.isLarge?'large':'small',
-    };
+    }
   }
 }
