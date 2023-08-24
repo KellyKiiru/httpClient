@@ -8,10 +8,10 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class SearchComponent {
   movieTitle = ''
- constructor(private _activatedRoute: ActivatedRoute){
-  this._activatedRoute.params.subscribe((p)=>{
-    this.movieTitle = p['movieTitle'];
-    console.log(this.movieTitle)
-  });
+  constructor(private _activatedRoute: ActivatedRoute){
+    this._activatedRoute.params.subscribe((p)=>{
+      this.movieTitle = p['movieTitle'];
+      console.log(this.movieTitle)
+    });
  }
 }
