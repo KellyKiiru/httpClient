@@ -1,17 +1,27 @@
-import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-actors',
   templateUrl: './actors.component.html',
   styleUrls: ['./actors.component.css']
 })
-export class ActorsComponent {
+export class ActorsComponent implements OnInit {
 
-  movieActor:any[]=[
-    {
-      imageUrl:'../../../assets/images/jack-anstey-XVoyX7l9ocY-unsplash.jpg',
-      name:'Morgan Freeman',
-      role:'God'
-    }
-  ]
+  constructor(private httpClient:HttpClient){}
+
+  movieActors:any[]=[]
+
+  loadMovieActors(){
+    this.httpClient.get<any[]>('assets/data/movieActors.json').subscribe((data:any[])=>{
+      console.log(data);
+      this.movieActors=data;
+    })
+  }
+
+  ngOnInit(): void {
+    this.loadMovieActors()
+  }
+
+
 }
