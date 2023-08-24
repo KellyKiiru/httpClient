@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class ActorsComponent {
 
+  movieActor:any[]=[
+    {
+      imageUrl:'../../../assets/images/jack-anstey-XVoyX7l9ocY-unsplash.jpg',
+      name:'Morgan Freeman',
+      role:'God'
+    }
+  ]
 }
