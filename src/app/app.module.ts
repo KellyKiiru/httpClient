@@ -17,6 +17,7 @@ import { ProfitPipe } from './pipes/profit.pipe';
 import { FormsModule } from '@angular/forms';
 import { ActorsComponent } from './components/actors/actors.component';
 import { RouterModule } from '@angular/router';
+import { AppRoutesModule } from './modules/app.routes';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,11 +36,7 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot([
-      {path:'', component:HomeComponent},
-      {path:'home', component:HomeComponent},
-      {path:'details', component:DetailsComponent},
-    ]),
+    AppRoutesModule,
     AppRoutingModule,
     FormsModule
   ],
