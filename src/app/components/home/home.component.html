@@ -103,7 +103,7 @@
     <div *ngFor="let movie of fanFavoriteMovies" routerLink="details" class="col-md-3" id="cardLink">
 
         <div class="card">
-            <img src="{{movie.imageUrl}}" class="card-image" alt="">
+            <img [src]="movie.imageUrl" class="card-image" alt="">
             <div class="card-body">
                 <h5 class="card-title">{{movie.title}}</h5>
                 <p class="card-text">{{movie.actors}}</p>
