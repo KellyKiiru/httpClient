@@ -55,7 +55,8 @@
         <app-actors></app-actors>
     </div>
     <p class="text-center">
-        <a href="" class="btn btn-warning" routerLink="/details/actors/+movieId">View More</a>
+        <a href="" class="btn btn-warning" 
+        [routerLink]="['/details/actors/' +movieId]">View More</a>
     </p>
 </div>
 
@@ -68,7 +69,8 @@
         <app-details-reviews></app-details-reviews>
     </div>
     <p class="text-center">
-        <a href="" class="btn btn-warning" routerLink="/details/reviews/+movieId">View More</a>
+        <a href="" class="btn btn-warning" 
+        [routerLink]="['/details/reviews/'+movieId]">View More</a>
     </p>
 </div>
 
@@ -76,11 +78,12 @@
 <br>
 <div class="row text-center">
     <h1>Similar Movies</h1>
-    <br>
+    <br> 
     <div class="col-md-12">
         <app-details-movies></app-details-movies>
     </div>
     <p class="text-center">
-        <a href="" class="btn btn-warning" routerLink="/details/movies/+movieId">View More</a>
+        <a href="" class="btn btn-warning" 
+        [routerLink]="['/details/movies/'+movieId]">View More</a>
     </p>
 </div>
