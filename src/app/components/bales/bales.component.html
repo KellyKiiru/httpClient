@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="card" style="width: 18rem;" *ngFor="let bale of bales ">
+        <div class="card-header">
+          Featured
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">This bale contains: {{bale.clothe_type}}</li>
+            <li class="list-group-item">Material: {{bale.material}}</li>
+            <li class="list-group-item">Origin country: {{bale.origin_country}}</li>
+            <li class="list-group-item">Weight: {{bale.weight}}</li>
+            <li class="list-group-item">Gender: {{bale.gender}}</li>
+            <li class="list-group-item">Season: {{bale.season}} </li>
+            <li class="list-group-item">Pieces {{bale.pieces}} </li>
+        </ul>
+    </div>
+</div>
