@@ -22,6 +22,9 @@ import { AppRoutesModule } from './modules/app.routes';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HeaderDirective } from './directives/header.directive';
 import { MyIfDirective } from './directives/my-if.directive';
+import { BalesComponent } from './components/bales/bales.component';
+import { BaleDetailsComponent } from './components/bale-details/bale-details.component';
+import { AddBalesComponent } from './components/add-bales/add-bales.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,6 +45,9 @@ import { MyIfDirective } from './directives/my-if.directive';
     ProfitPipe,
      HeaderDirective,
      MyIfDirective,
+     BalesComponent,
+     BaleDetailsComponent,
+     AddBalesComponent,
   ],
   imports: [
     BrowserModule,
