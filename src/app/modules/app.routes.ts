@@ -7,6 +7,9 @@ import { ActorsComponent } from "../components/actors/actors.component";
 import { DetailsMoviesComponent } from "../components/details-movies/details-movies.component";
 import { DetailsReviewsComponent } from "../components/details-reviews/details-reviews.component";
 import { NotFoundComponent } from "../not-found/not-found.component";
+import { BalesComponent } from "../components/bales/bales.component";
+import { BaleDetailsComponent } from "../components/bale-details/bale-details.component";
+import { AddBalesComponent } from "../components/add-bales/add-bales.component";
 
 const routes:Routes = [
     {path:'', component:HomeComponent},
@@ -16,7 +19,9 @@ const routes:Routes = [
     {path:'details/movies/:id', component:DetailsMoviesComponent},
     {path:'details/reviews/:id', component:DetailsReviewsComponent},
     {path:'search/:movieTitle', component:SearchComponent},
-    // {path:'feedback', component:FeedbackComponent},
+    {path:'bales',component:BalesComponent},
+    {path:'bales/details',component:BaleDetailsComponent},
+    {path:'bales/add', component:AddBalesComponent},
     {path:'**',component:NotFoundComponent},
 ]
 
